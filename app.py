@@ -15,7 +15,7 @@ load_dotenv()
 
 app = Flask(__name__)
 
-index_name = "medicalbottest"
+index_name = "medicalbot"
 
 embedding_model = create_embeddings()
 

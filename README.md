@@ -41,6 +41,12 @@ Medibot is a **Retrieval-Augmented Generation (RAG)** chatbot that answers medic
 
 ## 🏗 Architecture
 
+### Request flow
+
+![Medibot complete flow: browser → index.html → app.py → Pinecone → OpenAI → answer](assets/medibot-flow.png)
+
+### Indexing and query pipeline
+
 ```
                 ┌──────────────────────── Indexing (one-time) ────────────────────────┐
                 │                                                                      │
@@ -84,6 +90,8 @@ Medibot is a **Retrieval-Augmented Generation (RAG)** chatbot that answers medic
 ```
 Medical-Chatbot-/
 ├── .github/workflows/cicd.yaml   # CI/CD pipeline (build → ECR → EC2)
+├── assets/
+│   └── medibot-flow.png          # Request-flow diagram used in this README
 ├── data/
 │   └── Medical_book.pdf          # Knowledge-base source document
 ├── research/

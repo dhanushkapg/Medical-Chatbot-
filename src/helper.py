@@ -7,7 +7,7 @@ from langchain_community.document_loaders import PyPDFLoader, DirectoryLoader
 from langchain_huggingface import HuggingFaceEmbeddings
 
 #change working directory to the data folder
-os.chdir(r"D:\Study\PythonProjects\Medical Chatbot\Medical-Chatbot-")
+#os.chdir(r"D:\Study\PythonProjects\Medical Chatbot\Medical-Chatbot-")
 print(os.getcwd())
 
 
